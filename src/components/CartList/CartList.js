@@ -53,7 +53,6 @@ const CartList = ({cart}) => {
             <div className='exercise-details'>
                 <p>Break Time:</p> <p>30 Seconds</p>
             </div> 
-
             <button className='activity-btn'>Activity Completed</button>
         </div>
     );

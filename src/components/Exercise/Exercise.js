@@ -15,7 +15,6 @@ const Exercise = () => {
         console.log(gym)
         const newCart=[...cart, gym];
         setCart(newCart);
-
     }
     return (
         <div className='exercise-container'>
