@@ -1,0 +1,23 @@
+.gym{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    position:relative;
+
+}
+.gym img{
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+}
+.gym button{
+    background-color: rgba(81, 8, 31, 0.712);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    color: white;
+    width: 100%;
+}
+.gym button:hover{
+    background-color: rgba(250, 4, 82, 0.712);
+}

@@ -1,0 +1,12 @@
+.header{
+    background-color: rgba(81, 8, 31, 0.712);
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 50px;
+}
+.header img{
+    width: 70px;
+    height: 40px;
+}

@@ -1,0 +1,66 @@
+.cart-list{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 20px 20px;
+}
+.user-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-container img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.user-container p{
+    margin: 0px;
+}
+
+.user-details-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(239, 228, 228);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.user-details p{
+    margin: 0px;
+}
+
+.break-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+    background-color: rgb(239, 228, 228);
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+.break-time{
+    background-color: #ffffff;
+    padding: 0px 15px;
+    border-radius: 50%;
+}
+.exercise-details{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(239, 228, 228);
+    padding: 0px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.activity-btn{
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(81, 8, 31, 0.712);
+    color: #ffffff;
+}
+.activity-btn:hover{
+    background-color: rgba(250, 4, 82, 0.712);
+
+}
