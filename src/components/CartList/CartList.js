@@ -10,7 +10,9 @@ const CartList = ({cart}) => {
     }
     const handlerBreakTime= (event)=>{
         const breakTime=event.target.innerText;
-        setBrkTime(breakTime)
+        setBrkTime(breakTime);
+        let breakTimes={};
+        localStorage.setItem('break-time', JSON.stringify(breakTimes))
     }
     
     return (

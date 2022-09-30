@@ -13,7 +13,6 @@ const Exercise = () => {
         .then(data => setGyms(data))
     },[])
     const addToCart=(gym)=>{
-        console.log(gym)
         const newCart=[...cart, gym];
         setCart(newCart);
     }
