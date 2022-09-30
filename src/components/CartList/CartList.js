@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './CartList.css';
 import userPic from '../../images/user-pic.jpg'
+import { addToDb, getStoredCart } from '../../utilities/fackDb';
 
 const CartList = ({cart}) => {
     const [brkTime, setBrkTime]=useState([])
@@ -8,11 +9,27 @@ const CartList = ({cart}) => {
     for(const gym of cart){
         time=time+gym.time;
     }
+    
+    useEffect(()=>{
+        const storedCart=getStoredCart();
+        const savedCart=[];
+            if(storedCart){
+                const time=storedCart;
+                storedCart.breakTime=time;
+                savedCart.push(storedCart);
+            }
+    },[])
+
     const handlerBreakTime= (event)=>{
         const breakTime=event.target.innerText;
         setBrkTime(breakTime);
-        let breakTimes={};
-        localStorage.setItem('break-time', JSON.stringify(breakTimes))
+        addToDb(breakTime)
+        
+
+        // let breakTimes={};
+        // breakTimes['break-time']=breakTime;
+        // localStorage.setItem('break-time', JSON.stringify(breakTimes))
+
     }
     
     return (
