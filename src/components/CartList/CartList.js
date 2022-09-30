@@ -1,13 +1,18 @@
-import React from 'react';
-import './CartList.css'
+import React, { useState } from 'react';
+import './CartList.css';
 import userPic from '../../images/user-pic.jpg'
 
 const CartList = ({cart}) => {
-    console.log(cart)
+    const [brkTime, setBrkTime]=useState([])
     let time=0;
     for(const gym of cart){
         time=time+gym.time;
     }
+    const handlerBreakTime= (event)=>{
+        const breakTime=event.target.innerText;
+        setBrkTime(breakTime)
+    }
+    
     return (
         <div className='cart-list'>
             <div className='user-container'>
@@ -33,17 +38,17 @@ const CartList = ({cart}) => {
             </div>
             <h3>Add A Break</h3>
             <div className='break-container'>
-                <div className='break-time'>
-                    <p>20<small>s</small></p>
+                <div>
+                    <button onClick={(event)=>handlerBreakTime(event)} className='break-time'>20</button>
                 </div>
-                <div className='break-time'>
-                    <p>30<small>s</small></p>
+                <div>
+                    <button onClick={(event)=>handlerBreakTime(event)} className='break-time'>30</button>                
                 </div>
-                <div className='break-time'>
-                    <p>40<small>s</small></p>
+                <div>
+                    <button onClick={(event)=>handlerBreakTime(event)} className='break-time'>40</button>                
                 </div>
-                <div className='break-time'>
-                    <p>50<small>s</small></p>
+                <div>
+                    <button onClick={(event)=>handlerBreakTime(event)} className='break-time'>50</button>               
                 </div>
             </div>
             <h3>Exercise Details</h3>
@@ -51,7 +56,7 @@ const CartList = ({cart}) => {
                 <p>Exercise Time:</p> <p>{time} Seconds</p>
             </div> 
             <div className='exercise-details'>
-                <p>Break Time:</p> <p>30 Seconds</p>
+                <p>Break Time:</p> <p>{brkTime} Seconds</p>
             </div> 
             <button className='activity-btn'>Activity Completed</button>
         </div>

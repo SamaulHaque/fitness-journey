@@ -4,6 +4,7 @@ import Gym from '../Gym/Gym';
 import './Exercise.css'
 
 const Exercise = () => {
+    
     const [gyms, setGyms]=useState([])
     const [cart, setCart]=useState([])
     useEffect(()=>{
