@@ -8,10 +8,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
-.cart-list-container{
-
-}
-
 
 @media screen and (max-width:992px){
     .exercise-container{
