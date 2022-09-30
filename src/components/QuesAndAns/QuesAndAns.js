@@ -2,8 +2,9 @@ import React from 'react';
 
 const QuesAndAns = () => {
     return (
-        
- <div  class="accordion accordion-flush py-5" id="accordionFlushExample">
+ <div>
+    <h2 class="py-4 text-center">Questions and Answers</h2>
+ <div  class="accordion accordion-flush pb-5" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -42,6 +43,7 @@ const QuesAndAns = () => {
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div>
+</div>
 </div>
     
     );
