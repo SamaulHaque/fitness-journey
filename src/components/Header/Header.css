@@ -1,4 +1,5 @@
 .header{
+    width: 100%;
     background-color: rgba(81, 8, 31, 0.712);
     color: white;
     display: flex;
